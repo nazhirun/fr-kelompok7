@@ -245,7 +245,16 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> with SingleTick
                               offset: Offset(0, 10),
                             ),
                           ],
-                          
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              // Email field
+                              CustomTextField(
+                                controller: _emailController,
+                                label: 'Email',
+                                hint: 'Masukkan email Anda',
+                                keyboardType: TextInputType.emailAddress,
+                                validator: AuthValidator.validateEmail,
                                 prefixIcon: Icon(
                                   Icons.email_outlined,
                                   color: isDark ? Colors.white70 : AppTheme.primaryGradientColors[0],
