@@ -34,14 +34,6 @@ class UserModel {
 
   Map<String, dynamic> toJson() {
     return {
-      'id': id,
-      'name': name,
-      'email': email,
-      'profile_image': profileImage,
-      'email_verified_at': isVerified ? DateTime.now().toIso8601String() : null,
-      'created_at': createdAt,
-      'updated_at': updatedAt,
-      'role': role,
-    };
+     
   }
 }

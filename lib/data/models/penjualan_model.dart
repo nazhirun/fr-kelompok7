@@ -33,7 +33,8 @@ class PenjualanModel {
       total: json['total'],
       createdAt: json['created_at'],
       updatedAt: json['updated_at'],
-      barang: json['barang'] != null ? BarangModel.fromJson(json['barang']) : null,
+      barang:
+          json['barang'] != null ? BarangModel.fromJson(json['barang']) : null,
     );
   }
 
@@ -68,7 +69,12 @@ class PenjualanRequestModel {
 
   Map<String, dynamic> toJson() {
     // Perbaiki sesuai dengan yang diharapkan API
-   
+    // Pastikan field "barang_id" digunakan, bukan "barangId"
+    return {
+      'tanggal': tanggal,
+      'faktur': faktur,
+      'barang_id': barangId,
+      'qty': qty,
     };
   }
 }
@@ -97,15 +103,9 @@ class CheckoutItemModel {
   final int barangId;
   final int qty;
 
-  CheckoutItemModel({
-    required this.barangId,
-    required this.qty,
-  });
+  CheckoutItemModel({required this.barangId, required this.qty});
 
   Map<String, dynamic> toJson() {
-    return {
-      'barang_id': barangId,
-      'qty': qty,
-    };
+    return {'barang_id': barangId, 'qty': qty};
   }
-} 
+}
