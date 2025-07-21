@@ -68,12 +68,7 @@ class PenjualanRequestModel {
 
   Map<String, dynamic> toJson() {
     // Perbaiki sesuai dengan yang diharapkan API
-    // Pastikan field "barang_id" digunakan, bukan "barangId"
-    return {
-      'tanggal': tanggal,
-      'faktur': faktur,
-      'barang_id': barangId,
-      'qty': qty,
+   
     };
   }
 }

@@ -36,4 +36,18 @@ class BarangModel {
       updatedAt: json['updated_at'],
     );
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'nama': nama,
+      'harga': harga,
+      'stok': stok,
+      'gambar': gambar,
+      'keterangan': keterangan,
+      'kategori': kategori,
+      'created_at': createdAt,
+      'updated_at': updatedAt,
+    };
+  }
 }
