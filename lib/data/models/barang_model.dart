@@ -50,4 +50,4 @@ class BarangModel {
       'updated_at': updatedAt,
     };
   }
-} 
+}
