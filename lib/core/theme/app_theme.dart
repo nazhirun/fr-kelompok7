@@ -71,7 +71,7 @@ class AppTheme {
     BoxShadow(
       color: Colors.black.withOpacity(0.05),
       spreadRadius: 1,
-      blurRadius: 10,
+      blurRadius: 15,
       offset: Offset(0, 5),
     ),
   ];
