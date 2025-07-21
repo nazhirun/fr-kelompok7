@@ -454,7 +454,18 @@ class _AllBarangPageState extends State<AllBarangPage> {
               ),
               
               // Tombol Tambah ke Keranjang
-             
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.vertical(top: Radius.circular(12)),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.2),
+                      spreadRadius: 1,
+                      blurRadius: 4,
+                      offset: Offset(0, -1),
+                    ),
                   ],
                 ),
                 child: SafeArea(
