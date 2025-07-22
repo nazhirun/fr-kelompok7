@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:myatk/core/theme/app_theme.dart';
 import 'package:myatk/data/providers/auth_provider.dart';
 import 'package:myatk/data/providers/barang_provider.dart';

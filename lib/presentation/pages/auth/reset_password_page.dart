@@ -5,7 +5,6 @@ import 'package:myatk/presentation/pages/auth/login_page.dart';
 import 'package:myatk/presentation/widgets/common/custom_text_field.dart';
 import 'package:myatk/presentation/widgets/common/loading_button.dart';
 import 'package:provider/provider.dart';
-import 'package:lottie/lottie.dart';
 
 class ResetPasswordPage extends StatefulWidget {
   const ResetPasswordPage({Key? key}) : super(key: key);
@@ -110,6 +109,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                       width: double.infinity,
                       height: 10,
                       decoration: BoxDecoration(
+                        // ignore: deprecated_member_use
                         color: Colors.white.withOpacity(0.3),
                         borderRadius: BorderRadius.circular(5),
                       ),
@@ -163,10 +163,12 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                     Container(
                       padding: EdgeInsets.all(20),
                       decoration: BoxDecoration(
+                        // ignore: deprecated_member_use
                         color: Colors.white.withOpacity(0.9),
                         borderRadius: BorderRadius.circular(16),
                         boxShadow: [
                           BoxShadow(
+                            // ignore: deprecated_member_use
                             color: Colors.black.withOpacity(0.1),
                             blurRadius: 10,
                             spreadRadius: 2,
@@ -308,10 +310,12 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
               padding: EdgeInsets.all(24),
               margin: EdgeInsets.all(24),
               decoration: BoxDecoration(
+                // ignore: deprecated_member_use
                 color: Colors.white.withOpacity(0.9),
                 borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(
+                    // ignore: deprecated_member_use
                     color: Colors.black.withOpacity(0.1),
                     blurRadius: 10,
                     spreadRadius: 2,

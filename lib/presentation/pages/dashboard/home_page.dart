@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:intl/intl.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:myatk/data/models/barang_model.dart';
@@ -26,6 +24,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin {
   final TextEditingController _searchController = TextEditingController();
+  // ignore: unused_field
   int _currentCarouselIndex = 0;
   late AnimationController _animationController;
   
@@ -95,6 +94,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     final themeProvider = Provider.of<ThemeProvider>(context);
     final isDark = themeProvider.isDarkMode;
     
+    // ignore: unused_local_variable
     final user = authProvider.user;
     final barang = barangProvider.listBarang;
     final isLoading = barangProvider.loading;

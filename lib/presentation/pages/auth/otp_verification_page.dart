@@ -171,6 +171,7 @@ class _OtpVerificationPageState extends State<OtpVerificationPage> with SingleTi
             image: AssetImage('assets/images/background.png'),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
+              // ignore: deprecated_member_use
               isDark ? Colors.black.withOpacity(0.7) : Colors.black.withOpacity(0.5),
               BlendMode.darken,
             ),
@@ -303,6 +304,7 @@ class _OtpVerificationPageState extends State<OtpVerificationPage> with SingleTi
                         borderRadius: AppTheme.borderRadiusLarge,
                         boxShadow: [
                           BoxShadow(
+                            // ignore: deprecated_member_use
                             color: Colors.black.withOpacity(0.2),
                             blurRadius: 15,
                             spreadRadius: 0,
@@ -365,8 +367,10 @@ class _OtpVerificationPageState extends State<OtpVerificationPage> with SingleTi
                                 margin: const EdgeInsets.only(top: 16, bottom: 16),
                                 padding: const EdgeInsets.all(10),
                                 decoration: BoxDecoration(
+                                  // ignore: deprecated_member_use
                                   color: Colors.red.withOpacity(0.1),
                                   borderRadius: BorderRadius.circular(AppTheme.borderRadiusSmall),
+                                  // ignore: deprecated_member_use
                                   border: Border.all(color: Colors.red.withOpacity(0.3)),
                                 ),
                                 child: Row(

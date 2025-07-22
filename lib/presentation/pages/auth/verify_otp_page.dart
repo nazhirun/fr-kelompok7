@@ -1,10 +1,8 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:myatk/core/constants/app_constants.dart';
 import 'package:myatk/core/utils/timer_util.dart';
 import 'package:myatk/core/validators/auth_validator.dart';
 import 'package:myatk/data/providers/auth_provider.dart';
-import 'package:myatk/presentation/pages/dashboard/dashboard_page.dart';
 import 'package:myatk/presentation/pages/auth/login_page.dart';
 import 'package:myatk/presentation/widgets/common/loading_button.dart';
 import 'package:myatk/presentation/widgets/common/otp_input.dart';

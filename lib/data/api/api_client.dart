@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
 import 'package:myatk/core/config/api_config.dart';
 import 'package:myatk/data/api/interceptors/auth_interceptor.dart';
 import 'package:myatk/data/api/interceptors/logging_interceptor.dart';

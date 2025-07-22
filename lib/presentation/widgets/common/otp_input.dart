@@ -45,6 +45,7 @@ class OtpInput extends StatelessWidget {
             fieldWidth: 45,
             activeFillColor: isDark ? Color(0xFF272042) : Colors.white,
             inactiveFillColor: isDark ? Color(0xFF272042) : Colors.white,
+            // ignore: deprecated_member_use
             selectedFillColor: isDark ? Color(0xFF272042).withOpacity(0.7) : Colors.white.withOpacity(0.9),
             activeColor: hasError
                 ? Colors.red

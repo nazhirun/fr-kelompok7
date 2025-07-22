@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
-import 'package:myatk/core/theme/app_theme.dart';
 import 'package:myatk/data/providers/theme_provider.dart';
 import 'package:provider/provider.dart';
 

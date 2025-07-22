@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:math';
 import 'package:myatk/core/theme/app_theme.dart';
 import 'package:myatk/data/providers/theme_provider.dart';
 import 'package:provider/provider.dart';

@@ -95,8 +95,6 @@ class AppTheme {
       secondary: _accentColor,
       onPrimary: Colors.white,
       onSecondary: Colors.black,
-      background: backgroundGradientLight[0],
-      onBackground: Colors.black87,
       surface: Colors.white,
       onSurface: Colors.black87,
     ),
@@ -112,8 +110,8 @@ class AppTheme {
         padding: const EdgeInsets.symmetric(vertical: 16),
         shadowColor: Colors.transparent,
       ).copyWith(
-        backgroundColor: MaterialStateProperty.all(Colors.transparent),
-        foregroundColor: MaterialStateProperty.all(Colors.white),
+        backgroundColor: WidgetStateProperty.all(Colors.transparent),
+        foregroundColor: WidgetStateProperty.all(Colors.white),
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(
@@ -188,8 +186,6 @@ class AppTheme {
       secondary: _accentColor,
       onPrimary: Colors.white,
       onSecondary: Colors.white70,
-      background: backgroundGradientDark[0],
-      onBackground: Colors.white,
       surface: Color(0xFF1E1E1E),
       onSurface: Colors.white,
     ),
@@ -205,8 +201,8 @@ class AppTheme {
         padding: const EdgeInsets.symmetric(vertical: 16),
         shadowColor: Colors.transparent,
       ).copyWith(
-        backgroundColor: MaterialStateProperty.all(Colors.transparent),
-        foregroundColor: MaterialStateProperty.all(Colors.white),
+        backgroundColor: WidgetStateProperty.all(Colors.transparent),
+        foregroundColor: WidgetStateProperty.all(Colors.white),
       ),
     ),
     inputDecorationTheme: InputDecorationTheme(

@@ -105,6 +105,7 @@ class CartPage extends StatelessWidget {
                       color: isDark ? Color(0xFF1E1E2C) : Colors.white,
                       boxShadow: [
                         BoxShadow(
+                          // ignore: deprecated_member_use
                           color: Colors.black.withOpacity(0.05),
                           blurRadius: 10,
                           offset: Offset(0, -5),

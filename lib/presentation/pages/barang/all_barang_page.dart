@@ -71,6 +71,7 @@ class _AllBarangPageState extends State<AllBarangPage> {
             image: AssetImage('assets/images/background.png'),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
+              // ignore: deprecated_member_use
               isDark ? Colors.black.withOpacity(0.6) : Colors.white.withOpacity(0.9),
               BlendMode.dstATop,
             ),
@@ -96,6 +97,7 @@ class _AllBarangPageState extends State<AllBarangPage> {
                 borderRadius: BorderRadius.circular(23),
                 boxShadow: [
                   BoxShadow(
+                    // ignore: deprecated_member_use
                     color: Colors.black.withOpacity(0.1),
                     blurRadius: 10,
                     spreadRadius: 0,

@@ -103,7 +103,7 @@ class ProfilePage extends StatelessWidget {
                             radius: 50,
                             backgroundColor: isDark ? Color(0xFF272042) : Colors.white,
                             child: Text(
-                              user?.name?.substring(0, 1) ?? 'U',
+                              user?.name.substring(0, 1) ?? 'U',
                               style: TextStyle(
                                 fontSize: 40,
                                 color: AppTheme.primaryGradientColors[0],

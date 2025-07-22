@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:myatk/core/constants/app_constants.dart';
-import 'package:myatk/data/models/api_response_model.dart';
 import 'package:myatk/data/models/user_model.dart';
 import 'package:myatk/data/repositories/auth_repository.dart';
 import 'dart:convert';

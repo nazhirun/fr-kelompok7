@@ -9,7 +9,6 @@ import 'package:myatk/presentation/pages/auth/forgot_password_page.dart';
 import 'package:myatk/presentation/pages/auth/verify_otp_page.dart';
 import 'package:myatk/presentation/pages/dashboard/dashboard_page.dart';
 import 'package:myatk/presentation/widgets/common/custom_text_field.dart';
-import 'package:myatk/presentation/widgets/common/loading_button.dart';
 import 'package:provider/provider.dart';
 
 class LoginPage extends StatefulWidget {
@@ -117,6 +116,7 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
             image: AssetImage('assets/images/background.png'),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
+              // ignore: deprecated_member_use
               isDark ? Colors.black.withOpacity(0.7) : Colors.black.withOpacity(0.5),
               BlendMode.darken,
             ),
@@ -192,6 +192,7 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                               borderRadius: AppTheme.borderRadiusLarge,
                               boxShadow: [
                                 BoxShadow(
+                                  // ignore: deprecated_member_use
                                   color: Colors.black.withOpacity(0.2),
                                   blurRadius: 15,
                                   spreadRadius: 0,
@@ -271,8 +272,10 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                                       margin: const EdgeInsets.only(top: 12, bottom: 12),
                                       padding: const EdgeInsets.all(10),
                                       decoration: BoxDecoration(
+                                        // ignore: deprecated_member_use
                                         color: Colors.red.withOpacity(0.1),
                                         borderRadius: BorderRadius.circular(AppTheme.borderRadiusSmall),
+                                        // ignore: deprecated_member_use
                                         border: Border.all(color: Colors.red.withOpacity(0.3)),
                                       ),
                                       child: Row(
@@ -355,6 +358,7 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
                                       themeProvider.toggleTheme();
                                     },
                                     activeColor: Colors.white,
+                                    // ignore: deprecated_member_use
                                     activeTrackColor: AppTheme.primaryGradientColors[0].withOpacity(0.5),
                                   ),
                                 ],
@@ -372,7 +376,9 @@ class _LoginPageState extends State<LoginPage> with SingleTickerProviderStateMix
               if (_showSuccessAnimation)
                 Container(
                   color: isDark 
+                    // ignore: deprecated_member_use
                     ? Colors.black.withOpacity(0.9)
+                    // ignore: deprecated_member_use
                     : Colors.white.withOpacity(0.9),
                   width: double.infinity,
                   height: double.infinity,
